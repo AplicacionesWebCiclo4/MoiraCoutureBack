@@ -9,6 +9,14 @@ const orderSchema = mongoose.Schema({
         type: Date,
         required: true
     },
+    fechaEnvio: {
+        type: Date,
+        required: false
+    },
+    subtotal: {
+        type: Number,
+        Required: true
+    }
     
 });
 
