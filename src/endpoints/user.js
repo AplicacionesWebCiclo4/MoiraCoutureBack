@@ -1,5 +1,6 @@
 const express = require('express');
 const userSchema = require('../Models/user');
+require("../connection");
 
 const route = express.Router();
 

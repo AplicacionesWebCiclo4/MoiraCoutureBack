@@ -24,12 +24,20 @@ const userSchema = mongoose.Schema({
     },
     rol: {
         type: [String],
-        require:true
+        required:true
     },
     cedula: {
         type: String,
-        require: true,
         unique: true
+    },
+    address: {
+        departamento: String,
+        ciudad: String,
+        direccion: String,
+        referencia: String
+    },
+    cellphone: {
+        type: String
     }
     
 });
